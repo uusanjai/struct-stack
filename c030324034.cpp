@@ -23,3 +23,25 @@ void inputMahasiswa(Mahasiswa* mhs) {
     cout << "\nData berhasil disimpan. Tekan enter untuk melanjutkan...";
     getch();
 }
+void tampilMahasiswa(const Mahasiswa* mhs) {
+    system("cls");
+    cout << "=== Data Mahasiswa ===\n" << endl;
+    cout << "Nama    : " << mhs->nama << endl;
+    cout << "NIM     : " << mhs->nim << endl;
+    cout << "Alamat  : " << mhs->alamat << endl;
+    cout << "IPK     : " << mhs->ipk << endl;
+
+    cout << "\nTekan enter untuk melanjutkan...";
+    getch();
+}
+
+int main() {
+    Mahasiswa mhs;
+
+    inputMahasiswa(&mhs);
+
+    tampilMahasiswa(&mhs);
+
+    return 0;
+}
+
