@@ -54,6 +54,20 @@ int main() {
 
     pop(&nilai, &x);
 
+    pop(&nilai, &x);
+
+    push(30, &nilai);
+    push(10, &nilai);
+    push(50, &nilai);  
+
+  
+    pop(&nilai, &x);
+    pop(&nilai, &x);
+    pop(&nilai, &x);
+    pop(&nilai, &x); 
+
+
+
 
     return 0;
 }
